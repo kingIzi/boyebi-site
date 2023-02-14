@@ -1,28 +1,28 @@
 <div
   class="w-full h-20 flex flex-row justify-between items-center border-b border-b-gray-200 p-4"
 >
-  <p class="text-2xl md:text-4xl text-secondary font-olea">
+  <a routerLink="/" class="text-2xl md:text-4xl text-secondary font-olea">
     Boye <span class="text-primary">bi</span>
-  </p>
+  </a>
   <ul class="inline-flex space-x-2">
     <li>
       <a
-        routerLink="/home"
-        class="text-amber-50 font-lora text-sm md:text-md hover:text-primary duration-150"
+        (click)="scrollToView('videos')"
+        class="text-amber-50 font-lora cursor-pointer text-sm md:text-md hover:text-primary duration-150"
         >Videos</a
       >
     </li>
     <li>
       <a
-        href=""
-        class="text-amber-50 font-lora text-sm md:text-md hover:text-primary duration-150"
+        (click)="scrollToView('comics')"
+        class="text-amber-50 font-lora cursor-pointer text-sm md:text-md hover:text-primary duration-150"
         >Comics</a
       >
     </li>
     <li>
       <a
-        href=""
-        class="text-amber-50 font-lora text-sm md:text-md hover:text-primary duration-150"
+        routerLink="/about"
+        class="text-amber-50 font-lora cursor-pointer text-sm md:text-md hover:text-primary duration-150"
         >About</a
       >
     </li>

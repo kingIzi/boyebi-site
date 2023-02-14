@@ -1,0 +1,45 @@
+<div
+  class="flex flex-col md:flex-row md:max-w-xl rounded-lg bg-black shadow-lg"
+>
+  <img
+    class="w-full h-44 md:h-auto object-cover md:w-48 rounded-t-lg md:rounded-none md:rounded-l-lg"
+    src="assets/img/comic-poster.png"
+    alt=""
+  />
+  <div class="p-6 flex flex-col justify-start">
+    <p class="text-amber-50 font-lora text-xs md:text-sm font-medium mb-2">
+      Comic
+    </p>
+    <p class="text-primary font-olea text-lg md:text-2xl font-medium mb-2">
+      Kosambisama ya Kimpa Vita
+    </p>
+    <ul class="flex flex-row items-center space-x-1">
+      <li *ngFor="let o of [1, 2, 3, 4]">
+        <span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-star-fill text-secondary"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+            />
+          </svg>
+        </span>
+      </li>
+    </ul>
+    <p class="text-gray-400 tracking-wide text-xs md:text-sm mt-4 font-lora">
+      This is a wider card with supporting text below as a natural lead-in to
+      additional content. This content is a little bit longer.
+    </p>
+    <div class="flex flex-row justify-between items-center">
+      <p class="text-gray-400 text-xs mt-4 font-lora">256 Views</p>
+      <button class="text-red-500 tracking-widest font-lora hover:underline">
+        READ
+      </button>
+    </div>
+  </div>
+</div>

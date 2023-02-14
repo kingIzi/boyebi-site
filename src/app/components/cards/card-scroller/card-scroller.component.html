@@ -1,6 +1,6 @@
 <div class="flex flex-col space-y-4 h-full">
-  <p class="text-2xl text-amber-50 tracking-widest font-lora">Our Videos</p>
-  <div class="flex overflow-x-auto space-x-8 w-full scroll-img">
+  <p class="text-2xl text-amber-50 tracking-widest font-lora">{{ heading }}</p>
+  <div class="flex overflow-x-auto space-x-8 w-full scroll-img pb-1">
     <app-card *ngFor="let i of [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]"></app-card>
   </div>
 </div>
